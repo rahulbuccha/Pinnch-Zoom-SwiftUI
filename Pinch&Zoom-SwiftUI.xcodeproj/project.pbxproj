@@ -11,6 +11,10 @@
 		84B0E9B32898F10C00A7BF9C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B0E9B22898F10C00A7BF9C /* ContentView.swift */; };
 		84B0E9B52898F11300A7BF9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B0E9B42898F11300A7BF9C /* Assets.xcassets */; };
 		84B0E9B82898F11300A7BF9C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B0E9B72898F11300A7BF9C /* Preview Assets.xcassets */; };
+		84D54B312899316700A80F4B /* InfoPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D54B302899316600A80F4B /* InfoPanelView.swift */; };
+		84D54B352899508200A80F4B /* ControlImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D54B342899508200A80F4B /* ControlImageView.swift */; };
+		84D54B37289957D000A80F4B /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D54B36289957D000A80F4B /* PageModel.swift */; };
+		84D54B392899583C00A80F4B /* PageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D54B382899583C00A80F4B /* PageData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		84B0E9B22898F10C00A7BF9C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		84B0E9B42898F11300A7BF9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84B0E9B72898F11300A7BF9C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		84D54B302899316600A80F4B /* InfoPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPanelView.swift; sourceTree = "<group>"; };
+		84D54B342899508200A80F4B /* ControlImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlImageView.swift; sourceTree = "<group>"; };
+		84D54B36289957D000A80F4B /* PageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
+		84D54B382899583C00A80F4B /* PageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,11 @@
 		84B0E9AF2898F10C00A7BF9C /* Pinch&Zoom-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				84B0E9C12898F43900A7BF9C /* Data */,
+				84B0E9C22898F43F00A7BF9C /* Model */,
+				84B0E9BF2898F42600A7BF9C /* View */,
 				84B0E9B02898F10C00A7BF9C /* Pinch_Zoom_SwiftUIApp.swift */,
-				84B0E9B22898F10C00A7BF9C /* ContentView.swift */,
+				84B0E9BE2898F41900A7BF9C /* Screen */,
 				84B0E9B42898F11300A7BF9C /* Assets.xcassets */,
 				84B0E9B62898F11300A7BF9C /* Preview Content */,
 			);
@@ -65,6 +76,39 @@
 				84B0E9B72898F11300A7BF9C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		84B0E9BE2898F41900A7BF9C /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				84B0E9B22898F10C00A7BF9C /* ContentView.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		84B0E9BF2898F42600A7BF9C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84D54B302899316600A80F4B /* InfoPanelView.swift */,
+				84D54B342899508200A80F4B /* ControlImageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84B0E9C12898F43900A7BF9C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				84D54B382899583C00A80F4B /* PageData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		84B0E9C22898F43F00A7BF9C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84D54B36289957D000A80F4B /* PageModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +182,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				84B0E9B32898F10C00A7BF9C /* ContentView.swift in Sources */,
+				84D54B37289957D000A80F4B /* PageModel.swift in Sources */,
 				84B0E9B12898F10C00A7BF9C /* Pinch_Zoom_SwiftUIApp.swift in Sources */,
+				84D54B352899508200A80F4B /* ControlImageView.swift in Sources */,
+				84D54B392899583C00A80F4B /* PageData.swift in Sources */,
+				84D54B312899316700A80F4B /* InfoPanelView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +320,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -300,6 +349,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
